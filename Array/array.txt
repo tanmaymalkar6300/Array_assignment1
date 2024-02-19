@@ -1,0 +1,100 @@
+Arrays in java 
+
+Assignment 
+
+
+Q1.What is default value of array for different data types?
+Ans :-
+The default value of numeric type (int, float, double, ): is zero
+The default value for boolean is false
+The default value for char is null
+The default value for object is null.
+
+Q2.Can you Pass the negative number in Array size?
+Ans :-
+In java we cannot specify a negative size array.
+NegativeArraySizeException.
+
+Q3. Where does Array stored in JVM memory?
+Ans :-
+Arrays are stored in heap memory in JVM.
+
+Q4.What are the disadvantages of Array?
+Ans :-
+Once we create the size cannot be increased OR decreased.
+It stores only homogeneous data elements.
+
+Q5.What is the anonymous array in java? Give an example.
+Ans :-
+An array without a name is called as, Anonymous. Array.
+This type of array is create, just for instance use.
+
+
+
+
+class Calc{
+	public int add(int nums [])
+	{
+		int result =0;
+		for(int n :nums)
+		{
+			result = result + n;
+		}
+		return result;
+	}
+}
+public class array {
+
+	public static void main(String[] args) {
+		
+		Calc obj = new Calc();
+		
+			 
+			   int result = obj.add(new int [] {5,4,3,2});
+			System.out.println(result);
+			
+			
+
+	}
+
+}
+
+
+
+Q6. What are the different ways to traverse an array in java?
+Ans :- Using a for loop : you can iterate through the array using a traditional for loop. This method provides precise control over the loop variable and allows you to access each element by its index.
+
+
+Q7.What is the difference between length and length() method give an Examples ?
+Ans :-
+
+# Length it is the property of the array type.
+
+Ex :-
+
+public class array {
+
+	public static void main(String[] args) {
+		
+			 
+			   int nums [ ] ={5,4,3,2,1};
+			System.out.println(nums.length);		
+	}
+}
+
+# Length() it the method of String Class.
+
+
+public class array {
+
+	public static void main(String[] args) {
+		String names= "Raj, Roy, Tanmay"  ;
+		
+		System.out.println(names.length());
+
+	}
+
+}
+
+
+
